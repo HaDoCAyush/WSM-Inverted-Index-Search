@@ -1,0 +1,1 @@
+A database system stores structured information and provides mechanisms for retrieval, updates, and management. Database indexes reduce the amount of data examined during a query. An inverted index is especially useful for full text search because it maps words to documents rather than mapping a key to a single row. Database and search technologies are often used together.

@@ -1,0 +1,1 @@
+Computer networks connect devices so that they can exchange information. The internet uses packet switching and layered communication protocols. Search applications use network protocols such as HTTP to send a query from a browser to a backend service and return a response. Reliable communication is important for web applications and distributed information systems.

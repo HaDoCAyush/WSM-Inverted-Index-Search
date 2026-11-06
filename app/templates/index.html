@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A modular information retrieval project using an inverted index and wildcard search.">
+  <title>IndexLab — Document Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <nav class="topbar">
+      <a class="brand" href="/" aria-label="IndexLab home"><span class="brand-mark">i<span>.</span></span><span>index<span class="brand-light">lab</span></span></a>
+      <span class="top-tag"><span class="live-dot"></span> INFORMATION RETRIEVAL SYSTEM</span>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> WSM • SEARCH PROJECT</div>
+      <h1>Find the signal<br><span>in your documents.</span></h1>
+      <p class="hero-copy">A lightweight search engine powered by an inverted index. Search across a curated collection of text documents in milliseconds.</p>
+
+      <form id="search-form" class="search-panel">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+          <input id="query" name="q" type="search" placeholder="Try “information retrieval” or “comput*”" autocomplete="off" maxlength="120" aria-label="Search documents">
+          <kbd>ENTER</kbd>
+        </div>
+        <button id="search-button" type="submit"><span>Search</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+      </form>
+      <div class="hint-row"><span>TRY A SEARCH</span><button class="chip" data-query="information retrieval">information retrieval</button><button class="chip" data-query="comput*">comput*</button><button class="chip" data-query="data OR search">data OR search</button></div>
+    </section>
+
+    <section class="stats-grid" aria-label="Index statistics">
+      <article class="stat-card"><span class="stat-label">DOCUMENTS</span><strong id="doc-count">—</strong><span class="stat-foot">in your collection</span></article>
+      <article class="stat-card"><span class="stat-label">VOCABULARY</span><strong id="vocab-count">—</strong><span class="stat-foot">unique indexed terms</span></article>
+      <article class="stat-card"><span class="stat-label">TERM OCCURRENCES</span><strong id="occurrence-count">—</strong><span class="stat-foot">positions recorded</span></article>
+    </section>
+
+    <section class="results-section">
+      <div class="results-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> SEARCH OUTPUT</div><h2>Results <span id="result-count" class="count-pill">0</span></h2></div>
+        <span class="readonly"><span class="lock-icon">▣</span> READ ONLY</span>
+      </div>
+      <div id="result-area" class="result-area" role="region" aria-live="polite" aria-label="Search results">
+        <div class="empty-state" id="empty-state">
+          <div class="empty-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="12"></circle><path d="m30 30 10 10M16 21h10M21 16v10"></path></svg></div>
+          <strong>Your results will appear here</strong>
+          <p>Enter a term above to search the indexed documents.</p>
+        </div>
+      </div>
+    </section>
+    <footer><span>INDEXLAB <span class="footer-sep">/</span> WSM ASSIGNMENT</span><span>Built by <strong>Ayush Gupta</strong> · B124025 · CSEA</span></footer>
+  </main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

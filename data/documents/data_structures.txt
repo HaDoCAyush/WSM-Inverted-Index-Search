@@ -1,0 +1,1 @@
+Data structures organize information so that programs can store, access, and update data efficiently. Arrays, linked lists, stacks, queues, trees, and hash tables are common examples. A search system uses data structures to represent its vocabulary and document postings. A dictionary or hash map can provide fast lookup from a term to its posting list.

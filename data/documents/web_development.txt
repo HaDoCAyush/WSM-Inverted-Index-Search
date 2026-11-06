@@ -1,0 +1,1 @@
+Web development combines frontend interfaces and backend services. The frontend collects a query through a search input and sends it to a backend API. The backend processes the query, consults an index, and returns matching results. HTML defines page structure, CSS controls presentation, JavaScript adds interaction, and Python Flask can provide server-side routing.

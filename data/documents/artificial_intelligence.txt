@@ -1,0 +1,1 @@
+Artificial intelligence studies systems that perform tasks associated with human intelligence. Machine learning algorithms discover patterns from data. Natural language processing helps computers analyze, understand, and generate human language. Information retrieval is a related field because it connects a user's language query with relevant information stored in documents.

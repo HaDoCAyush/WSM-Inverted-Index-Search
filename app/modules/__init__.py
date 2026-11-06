@@ -1,0 +1,1 @@
+"""Core information-retrieval modules."""
