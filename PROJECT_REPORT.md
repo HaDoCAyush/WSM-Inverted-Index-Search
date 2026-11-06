@@ -450,7 +450,7 @@ The sample corpus is intentionally varied so that different searches produce dif
 4. Commit the files.
 5. Copy the repository URL into the project report or submission form.
 
-**GitHub repository URL:** `PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE`
+**GitHub repository URL:** `[PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE](https://github.com/HaDoCAyush/WSM-Inverted-Index-Search)`
 
 The repository URL cannot be generated until the student creates the repository under their own GitHub account.
 
